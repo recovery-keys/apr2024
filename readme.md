@@ -45,6 +45,13 @@ for i in *; do jpegoptim "$i" ; done
 for i in {1..2040}; do LC_ALL=C tr -dc 'A-Za-z0-9!"#$%&'\''()*+,-./:;<=>?@[\]^_`{|}~' </dev/urandom | head -c 32  > $i.key; done
 ```
 
+### git config when pushing changes:
+```
+git config --global user.name "teta2064"
+git config --global user.email teta2064@outlook.com
+git config credential.username teta2064@outlook.com
+```
+
 ### tools
 - mogrify
 - exiftool
